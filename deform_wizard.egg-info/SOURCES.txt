@@ -6,4 +6,5 @@ deform_wizard.egg-info/SOURCES.txt
 deform_wizard.egg-info/dependency_links.txt
 deform_wizard.egg-info/entry_points.txt
 deform_wizard.egg-info/not-zip-safe
+deform_wizard.egg-info/requires.txt
 deform_wizard.egg-info/top_level.txt

@@ -1,10 +1,16 @@
 Metadata-Version: 1.0
 Name: deform-wizard
 Version: 0.1dev
-Summary: UNKNOWN
-Home-page: UNKNOWN
+Summary: Form Wizard plugin for Deform
+Home-page: http://github.com/Electrosoup
 Author: Simon Oram
 Author-email: simon@electrosoup.co.uk
 License: GPL
 Description: UNKNOWN
+Keywords: web wsgi deform forms form
 Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
