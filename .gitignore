@@ -1,0 +1,14 @@
+*.pyc
+*.egg
+*.egg-info
+dist/
+env26/
+.coverage
+bin/
+include/
+lib/
+local
+nosetests.xml
+pyramid_deform/coverage.xml
+.tox/
+.DS_Store
