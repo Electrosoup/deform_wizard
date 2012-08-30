@@ -81,13 +81,11 @@ class WizardState(object):
 
         return {}
 
-    def set_step_state(self, num, name, state):
+    def set_step_state(self, num, state):
 
         states = self.get_step_states()
 
         states[num] = state
-
-        states[name] = state
 
         self.request.session.changed()
 
@@ -109,7 +107,7 @@ class WizardState(object):
 
         step = self.get_step_num()
 
-        self.set_step_state(step, self.wizard_name, state)
+        self.set_step_state(step, state)
 
 
 class FormWizardView(object):
@@ -216,15 +214,20 @@ class FormWizard(object):
 
 @colander.deferred
 def deferred_csrf_value(node, kw):
+
     return kw['request'].session.get_csrf_token()
 
 
 @colander.deferred
 def deferred_csrf_validator(node, kw):
+
     def csrf_validate(node, value):
+
         if value != kw['request'].session.get_csrf_token():
+
             raise colander.Invalid(node,
                     ('Invalid cross-site scripting token'))
+
     return csrf_validate
 
 
@@ -253,8 +256,13 @@ class CSRFSchema(colander.Schema):
       factory* in your Pyramid application.
     """
     csrf_token = colander.SchemaNode(
+
         colander.String(),
+
         widget=deform.widget.HiddenWidget(),
+
         default=deferred_csrf_value,
+
         validator=deferred_csrf_validator,
+
         )
