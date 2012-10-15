@@ -1,2 +1,2 @@
-deform_pyramid
+deform_wizard
 ==============
