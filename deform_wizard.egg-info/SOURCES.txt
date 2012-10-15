@@ -1,6 +1,8 @@
+README.txt
 setup.cfg
 setup.py
 deform_wizard/__init__.py
+deform_wizard/tests.py
 deform_wizard.egg-info/PKG-INFO
 deform_wizard.egg-info/SOURCES.txt
 deform_wizard.egg-info/dependency_links.txt

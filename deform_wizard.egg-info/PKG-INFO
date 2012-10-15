@@ -6,7 +6,8 @@ Home-page: http://github.com/Electrosoup
 Author: Simon Oram
 Author-email: simon@electrosoup.co.uk
 License: GPL
-Description: UNKNOWN
+Description: deform_pyramid
+        ==============
 Keywords: web wsgi deform forms form
 Platform: UNKNOWN
 Classifier: Intended Audience :: Developers
