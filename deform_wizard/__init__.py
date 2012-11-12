@@ -166,6 +166,10 @@ class FormWizardView(object):
 
                 ws.clear()
 
+                for i in states.keys():
+
+                    del states[i]['csrf_token']
+
                 return {'wizard_data': states}
 
         return {'form': form.render()}
